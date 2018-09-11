@@ -2,6 +2,7 @@
     --side-bar-bg-color: #fafafa;
     --control-text-color: #777;
     --heading-bg-color: #b5e3ff;
+    --standard-radius: 1rem;
 }
 
 @include-when-export url(https://fonts.googleapis.com/earlyaccess/opensanshebrew.css);
@@ -50,7 +51,7 @@ body {
   	padding: 20px 30px 40px 30px;
 	padding-top: 20px;
     padding-bottom: 100px;
-    direction: rtl
+    direction: rtl;
 }
 #write > ul:first-child,
 #write > ol:first-child{
@@ -114,15 +115,19 @@ h6 code {
 }
 h1 {
     padding-bottom: .3em;
-    font-size: 2.25em;
+    font-size: 3em;
     line-height: 1.2;
     border-bottom: 1px solid #eee;
+    font-family: 'Almoni DL AAA';
+    font-weight: 900;
 }
 h2 {
     padding-bottom: .3em;
-    font-size: 1.75em;
+    font-size: 2em;
     line-height: 1.225;
     border-bottom: 1px solid #eee;
+    font-family: 'Almoni DL AAA';
+    font-weight: 400;
 }
 h3 {
     font-size: 1.5em;
@@ -138,15 +143,28 @@ h6 {
    font-size: 1em;
     color: #777;
 }
-#write h1:first-of-type {
-    background-color: var(--heading-bg-color);
-    border-bottom: hidden;
-    font-size: 5.5em;
-}
+#write h1:first-of-type,
 #write h2:first-of-type {
     background-color: var(--heading-bg-color);
-    border-bottom: hidden;
-    font-size: 2em;
+    border-bottom: none;
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
+#write h1:first-of-type {
+    font-size: 6.25em;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    border-radius: var(--standard-radius) var(--standard-radius) 0 0;
+}
+#write h2:first-of-type {
+    font-size: 2.5em;
+    margin-top: 0;
+    padding-top: 0;
+    font-family: 'Almoni Tzar AAA';
+    font-weight: 400;
+}
+#write p, td{
+    font-size: 120%;
 }
 p,
 blockquote,
