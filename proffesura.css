@@ -1,7 +1,7 @@
 :root {
     --side-bar-bg-color: #fafafa;
     --control-text-color: #777;
-    --heading-bg-color: #94d6fc;
+    --heading-bg-color: #b5e3ff;
 }
 
 @include-when-export url(https://fonts.googleapis.com/earlyaccess/opensanshebrew.css);
@@ -138,10 +138,15 @@ h6 {
    font-size: 1em;
     color: #777;
 }
-#write h1, 
-#write h2 {
+#write h1:first-of-type {
     background-color: var(--heading-bg-color);
     border-bottom: hidden;
+    font-size: 5.5em;
+}
+#write h2:first-of-type {
+    background-color: var(--heading-bg-color);
+    border-bottom: hidden;
+    font-size: 2em;
 }
 p,
 blockquote,
