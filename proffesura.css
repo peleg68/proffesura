@@ -3,34 +3,34 @@
     --control-text-color: #777;
 }
 
-@include-when-export url(https://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,700,400&subset=latin,latin-ext);
+@include-when-export url(https://fonts.googleapis.com/earlyaccess/opensanshebrew.css);
 
 @font-face {
-    font-family: 'Open Sans';
+    font-family: 'Open Sans Hebrew';
     font-style: normal;
     font-weight: normal;
-    src: local('Open Sans Regular'),url('./github/400.woff') format('woff')
+    src: local('Open Sans Hebrew Regular'),url('./github-rtl/OpenSansHebrew-Regular.ttf') format('ttf')
 }
 
 @font-face {
-    font-family: 'Open Sans';
+    font-family: 'Open Sans Hebrew';
     font-style: italic;
     font-weight: normal;
-    src: local('Open Sans Italic'),url('./github/400i.woff') format('woff')
+    src: local('Open Sans Hebrew Italic'),url('./github-rtl/OpenSansHebrew-Italic.ttf') format('ttf')
 }
 
 @font-face {
-    font-family: 'Open Sans';
+    font-family: 'Open Sans Hebrew';
     font-style: normal;
     font-weight: bold;
-    src: local('Open Sans Bold'),url('./github/700.woff') format('woff')
+    src: local('Open Sans Hebrew Bold'),url('./github-rtl/OpenSansHebrew-Bold.ttf') format('ttf')
 }
 
 @font-face {
-    font-family: 'Open Sans';
+    font-family: 'Open Sans Hebrew';
     font-style: italic;
     font-weight: bold;
-    src: local('Open Sans Bold Italic'),url('./github/700i.woff') format('woff')
+    src: local('Open Sans Hebrew Bold Italic'),url('./github-rtl/OpenSansHebrew-BoldItalic.ttf') format('ttf')
 }
 
 html {
@@ -38,7 +38,7 @@ html {
 }
 
 body {
-    font-family: "Open Sans","Clear Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: "Open Sans Hebrew","Clear Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
     color: rgb(51, 51, 51);
     line-height: 1.6;
 }
@@ -49,6 +49,7 @@ body {
   	padding: 20px 30px 40px 30px;
 	padding-top: 20px;
     padding-bottom: 100px;
+    direction: rtl
 }
 #write > ul:first-child,
 #write > ol:first-child{
@@ -199,7 +200,7 @@ li p.first {
 }
 ul,
 ol {
-    padding-left: 30px;
+    padding-right: 30px;
 }
 ul:first-child,
 ol:first-child {
@@ -210,12 +211,12 @@ ol:last-child {
     margin-bottom: 0;
 }
 blockquote {
-    border-left: 4px solid #dfe2e5;
+    border-right: 4px solid #dfe2e5;
     padding: 0 15px;
     color: #777777;
 }
 blockquote blockquote {
-    padding-right: 0;
+    padding-left: 0;
 }
 table {
     padding: 0;
@@ -234,13 +235,13 @@ table tr th {
     font-weight: bold;
     border: 1px solid #dfe2e5;
     border-bottom: 0;
-    text-align: left;
+    text-align: right;
     margin: 0;
     padding: 6px 13px;
 }
 table tr td {
     border: 1px solid #dfe2e5;
-    text-align: left;
+    text-align: right;
     margin: 0;
     padding: 6px 13px;
 }
@@ -254,7 +255,7 @@ table tr td:last-child {
 }
 
 .CodeMirror-lines {
-    padding-left: 4px;
+    padding-right: 4px;
 }
 
 .code-tooltip {
@@ -271,6 +272,7 @@ tt {
     padding: 0;
     padding: 2px 4px 0px 4px;
     font-size: 0.9em;
+    direction: ltr
 }
 
 code {
@@ -287,7 +289,9 @@ code {
 
 
 .md-task-list-item > input {
-  margin-left: -1.3em;
+  margin-right: -1.3em;
+  position: absolute;
+  right: 0;
 }
 
 @media screen and (min-width: 914px) {
@@ -332,19 +336,19 @@ code {
 }
 
 #write>h3.md-focus:before{
-	left: -1.5625rem;
+	right: -1.5625rem;
 	top: .375rem;
 }
 #write>h4.md-focus:before{
-	left: -1.5625rem;
+	right: -1.5625rem;
 	top: .285714286rem;
 }
 #write>h5.md-focus:before{
-	left: -1.5625rem;
+	right: -1.5625rem;
 	top: .285714286rem;
 }
 #write>h6.md-focus:before{
-	left: -1.5625rem;
+	right: -1.5625rem;
 	top: .285714286rem;
 }
 .md-image>.md-meta {
@@ -383,7 +387,7 @@ code {
 
 /** focus mode */
 .on-focus-mode blockquote {
-    border-left-color: rgba(85, 85, 85, 0.12);
+    border-right-color: rgba(85, 85, 85, 0.12);
 }
 
 header, .context-menu, .megamenu-content, footer{
