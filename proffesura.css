@@ -4,7 +4,9 @@
     --color-primary-light: #B5E3FF;
     --color-primary-normal: #03A9F4;
     --color-primary-dark: #0288D1;
-    --color-accent: #607D8B;
+    --color-accent-light: #CFD8DC;
+    --color-accent-normal: #607D8B;
+    --color-accent-dark: #455A64;
     --color-text-primary: rgb(51, 51, 51);
     --color-text-secondary: #757575;
     --color-divider: #BDBDBD;
@@ -151,12 +153,60 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'Assistant';
+    src: local('Assistant-Regular'),
+        url('./proffesura/Assistant-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Assistant';
+    src: local('Assistant-Light'),
+        url('./proffesura/Assistant-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Assistant';
+    src: local('Assistant-SemiBold'),
+        url('./proffesura/Assistant-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Assistant';
+    src: local('Assistant Bold'), local('Assistant-Bold'),
+        url('./proffesura/Assistant-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Assistant';
+    src: local('Assistant-ExtraLight'),
+        url('./proffesura/Assistant-ExtraLight.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Assistant';
+    src: local('Assistant-ExtraBold'),
+        url('./proffesura/Assistant-ExtraBold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
+
 html {
     font-size: 16px;
 }
 
 body {
-    font-family: "Open Sans Hebrew","Clear Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: "Assistant", "Open Sans Hebrew","Clear Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
     color: rgb(51, 51, 51);
     line-height: 1.6;
 }
@@ -168,6 +218,7 @@ body {
 	padding-top: 20px;
     padding-bottom: 100px;
     direction: rtl;
+    color: var(--color-text-primary);
 }
 #write > ul:first-child,
 #write > ol:first-child{
@@ -248,6 +299,7 @@ h2 {
 h3 {
     font-size: 1.5em;
     line-height: 1.43;
+    font-family: 'Open Sans Hebrew';
 }
 h4 {
     font-size: 1.25em;
@@ -272,7 +324,7 @@ h6 {
     padding-right: 0.5rem;
     margin: 0.1rem;
     border-bottom: none;
-    border-right: 0.5rem solid var(--color-accent);
+    border-right: 0.5rem solid var(--color-accent-normal);
 }
 #write h1, #write h1 + h2 {
     border: none;
@@ -292,11 +344,12 @@ h6 {
     font-size: 1.5em;
     margin: 0.5rem 0 0.5rem 0;
 }
-ol>li , ol>li>p{
+ol li, ol li p{
     font-weight: 800;
     font-size: 1.20em;
     margin: 0.5rem 0 0 0;
     list-style: none;
+    font-family: 'Open Sans Hebrew';
 }
 ol>li>p::before {
     content: counter(li);
@@ -306,12 +359,14 @@ ol>li>p::before {
     margin-right: -1em;
     font-weight: 200;
 }
-ul>li>p, ul>li{
+ul li p, ul li{
     font-weight: 400;
     list-style-type: disc;
     margin: 0;
     font-size: 1rem;
+    font-family: 'Assistant';
 }
+li
 #write p, td{
     font-size: 110%;
 }
@@ -404,29 +459,50 @@ table {
     word-break: initial;
     border-collapse: separate;
     border-radius: var(--standard-radius);
+    border: 1px none var(--color-divider);
 }
 table tr {
     border-top: 1px solid var(--color-divider);
     margin: 0;
     padding: 0;
 }
-table tr:nth-child(2n),
-thead {
+table tr:nth-child(2n+1) {
     background-color: #f8f8f8;
 }
+thead td, 
+thead th {
+    background-color: var(--color-accent-light);
+}
 table tr th {
-    font-weight: bold;
+    font-weight: 800;
+    font-family: 'Assistant';
+    font-size: 1.2rem;
     border: 1px solid var(--color-divider);
-    border-bottom: 0;
     text-align: right;
     margin: 0;
-    padding: 6px 13px;
+    padding: 0.5rem 1rem;
 }
 table tr td {
     border: 1px solid var(--color-divider);
     text-align: right;
     margin: 0;
-    padding: 6px 13px;
+    padding: 0.5rem 1rem;
+}
+thead>tr>th:first-child, 
+thead>tr>td:first-child {
+    border-top-right-radius: var(--standard-radius);
+}
+thead>tr>th:last-child, 
+thead>tr>td:last-child {
+    border-top-left-radius: var(--standard-radius);
+}
+tbody>tr:last-child>th:first-child, 
+tbody>tr:last-child>td:first-child {
+    border-bottom-right-radius: var(--standard-radius);
+}
+tbody>tr:last-child>th:last-child, 
+tbody>tr:last-child>td:last-child {
+    border-bottom-left-radius: var(--standard-radius);
 }
 table tr th:first-child,
 table tr td:first-child {
