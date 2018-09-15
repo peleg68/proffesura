@@ -301,6 +301,7 @@ ol>li>p::before {
     display: inline-block; 
     width: 1em;
     margin-right: -1em;
+    font-weight: 200;
 }
 ul>li>p, ul>li{
     font-weight: 400;
