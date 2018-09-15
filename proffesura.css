@@ -402,9 +402,11 @@ blockquote blockquote {
 table {
     padding: 0;
     word-break: initial;
+    border-collapse: separate;
+    border-radius: var(--standard-radius);
 }
 table tr {
-    border-top: 1px solid #dfe2e5;
+    border-top: 1px solid var(--color-divider);
     margin: 0;
     padding: 0;
 }
@@ -414,14 +416,14 @@ thead {
 }
 table tr th {
     font-weight: bold;
-    border: 1px solid #dfe2e5;
+    border: 1px solid var(--color-divider);
     border-bottom: 0;
     text-align: right;
     margin: 0;
     padding: 6px 13px;
 }
 table tr td {
-    border: 1px solid #dfe2e5;
+    border: 1px solid var(--color-divider);
     text-align: right;
     margin: 0;
     padding: 6px 13px;
