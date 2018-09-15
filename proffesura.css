@@ -14,6 +14,7 @@
 }
 
 @include-when-export url(https://fonts.googleapis.com/earlyaccess/opensanshebrew.css);
+@include-when-export url(https://fonts.googleapis.com/css?family=Assistant);
 
 @font-face {
     font-family: 'Open Sans Hebrew';
@@ -78,8 +79,6 @@
     font-weight: normal;
     font-style: normal;
 }
-
-
 
 @font-face {
     font-family: 'Almoni DL AAA';
