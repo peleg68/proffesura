@@ -288,8 +288,11 @@ h6 {
 #write h3 {
     font-size: 110%;
     font-size: 1.65em;
+    font-weight: 800;
+    font-size: 1.5em;
+    margin: 0.5rem 0 0.5rem 0;
 }
-h3, ol>li , ol>li>p{
+ol>li , ol>li>p{
     font-weight: 800;
     font-size: 1.5em;
     margin: 0.5rem 0 0.5rem 0;
