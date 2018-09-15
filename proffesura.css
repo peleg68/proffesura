@@ -15,31 +15,69 @@
 
 @font-face {
     font-family: 'Open Sans Hebrew';
-    font-style: normal;
-    font-weight: normal;
-    src: local('Open Sans Hebrew Regular'),url('./proffesura/OpenSansHebrew-Regular.ttf') format('ttf')
-}
-
-@font-face {
-    font-family: 'Open Sans Hebrew';
+    src: local('Open Sans Hebrew Light Italic'), local('OpenSansHebrew-LightItalic'),
+        url('./proffesura/OpenSansHebrew-LightItalic.ttf') format('truetype');
+    font-weight: 300;
     font-style: italic;
-    font-weight: normal;
-    src: local('Open Sans Hebrew Italic'),url('./proffesura/OpenSansHebrew-Italic.ttf') format('ttf')
 }
 
 @font-face {
-    font-family: 'Open Sans Hebrew';
-    font-style: normal;
-    font-weight: bold;
-    src: local('Open Sans Hebrew Bold'),url('./proffesura/OpenSansHebrew-Bold.ttf') format('ttf')
-}
-
-@font-face {
-    font-family: 'Open Sans Hebrew';
+    font-family: 'Open Sans Hebrew Extra';
+    src: local('Open Sans Hebrew Extra Bold Italic'), local('OpenSansHebrewExtraBold-Italic'),
+        url('./proffesura/OpenSansHebrewExtraBold-Italic.ttf') format('truetype');
+    font-weight: 800;
     font-style: italic;
-    font-weight: bold;
-    src: local('Open Sans Hebrew Bold Italic'),url('./proffesura/OpenSansHebrew-BoldItalic.ttf') format('ttf')
 }
+
+@font-face {
+    font-family: 'Open Sans Hebrew';
+    src: local('Open Sans Hebrew Italic'), local('OpenSansHebrew-Italic'),
+        url('./proffesura/OpenSansHebrew-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Open Sans Hebrew';
+    src: local('Open Sans Hebrew Bold'), local('OpenSansHebrew-Bold'),
+        url('./proffesura/OpenSansHebrew-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Open Sans Hebrew';
+    src: local('Open Sans Hebrew Light'), local('OpenSansHebrew-Light'),
+        url('./proffesura/OpenSansHebrew-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Open Sans Hebrew Extra';
+    src: local('Open Sans Hebrew Extra Bold'), local('OpenSansHebrew-ExtraBold'),
+        url('./proffesura/OpenSansHebrew-ExtraBold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Open Sans Hebrew';
+    src: local('Open Sans Hebrew Bold Italic'), local('OpenSansHebrew-BoldItalic'),
+        url('./proffesura/OpenSansHebrew-BoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Open Sans Hebrew';
+    src: local('Open Sans Hebrew'), local('OpenSansHebrew-Regular'),
+        url('./proffesura/OpenSansHebrew-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
 
 @font-face {
     font-family: 'Almoni DL AAA';
