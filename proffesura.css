@@ -350,7 +350,7 @@ ol li, ol li p:first-of-type{
     list-style: none;
     font-family: 'Open Sans Hebrew';
 }
-ol>li>p::before {
+ol>li>p:first-of-type::before {
     content: counter(li);
     color: var(--color-primary-normal);
     display: inline-block; 
