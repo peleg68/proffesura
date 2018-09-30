@@ -5,7 +5,7 @@
     --color-primary-normal: #03A9F4;
     --color-primary-dark: #0288D1;
     --color-accent-light: #CFD8DC;
-    --color-accent-normal: #607D8B;
+    --color-accent-normal: #9BA1A3;
     --color-accent-dark: #455A64;
     --color-text-primary: rgb(51, 51, 51);
     --color-text-secondary: #757575;
@@ -471,7 +471,7 @@ table tr {
 }
 #write thead td, 
 #write thead th {
-    background-color: var(--color-accent-light);
+    background-color: var(--color-primary-light);
 }
 table tr th {
     font-weight: 800;
