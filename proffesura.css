@@ -343,7 +343,7 @@ h6 {
     font-size: 1.5em;
     margin: 0.5rem 0 0.5rem 0;
 }
-ol li, ol li p:first-of-type{
+ol li p:first-of-type{
     font-weight: 800;
     font-size: 1.20em;
     margin: 0.5rem 0 0 0;
