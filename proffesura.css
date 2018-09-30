@@ -322,7 +322,7 @@ h6 {
     padding-right: 0.5rem;
     margin: 0.1rem;
     border-bottom: none;
-    border-right: 0.5rem solid var(--color-accent-normal);
+    border-right: 0.5rem solid var(--color-accent-light);
 }
 #write h1, #write h1 + h2 {
     border: none;
