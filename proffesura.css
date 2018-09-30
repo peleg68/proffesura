@@ -291,6 +291,8 @@ h2 {
     font-size: 2em;
     line-height: 1.225;
     border-bottom: 1px solid var(--color-primary-light);
+    font-family: 'Almoni Tzar AAA', 'Open Sans Hebrew';
+    font-weight: 400;
 }
 h3 {
     font-size: 1.5em;
@@ -321,8 +323,6 @@ h6 {
     margin: 0.1rem;
     border-bottom: none;
     border-right: 0.5rem solid var(--color-accent-normal);
-    font-family: 'Almoni Tzar AAA';
-    font-weight: 400;
 }
 #write h1, #write h1 + h2 {
     border: none;
