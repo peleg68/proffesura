@@ -466,11 +466,11 @@ table tr {
     margin: 0;
     padding: 0;
 }
-table tr:nth-child(2n+1) {
+#write table tr:nth-child(2n+1) {
     background-color: #f8f8f8;
 }
-thead td, 
-thead th {
+#write thead td, 
+#write thead th {
     background-color: var(--color-accent-light);
 }
 table tr th {
@@ -488,20 +488,20 @@ table tr td {
     margin: 0;
     padding: 0.5rem 1rem;
 }
-thead>tr>th:first-child, 
-thead>tr>td:first-child {
+#write thead>tr>th:first-child, 
+#write thead>tr>td:first-child {
     border-top-right-radius: var(--standard-radius);
 }
-thead>tr>th:last-child, 
-thead>tr>td:last-child {
+#write thead>tr>th:last-child, 
+#write thead>tr>td:last-child {
     border-top-left-radius: var(--standard-radius);
 }
-tbody>tr:last-child>th:first-child, 
-tbody>tr:last-child>td:first-child {
+#write tbody>tr:last-child>th:first-child, 
+#write tbody>tr:last-child>td:first-child {
     border-bottom-right-radius: var(--standard-radius);
 }
-tbody>tr:last-child>th:last-child, 
-tbody>tr:last-child>td:last-child {
+#write tbody>tr:last-child>th:last-child, 
+#write tbody>tr:last-child>td:last-child {
     border-bottom-left-radius: var(--standard-radius);
 }
 table tr th:first-child,
