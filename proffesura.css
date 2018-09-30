@@ -347,8 +347,10 @@ ol li p:first-of-type{
     font-weight: 800;
     font-size: 1.20em;
     margin: 0.5rem 0 0 0;
-    list-style: none;
     font-family: 'Open Sans Hebrew';
+}
+ol li {
+    list-style: none;
 }
 ol>li>p:first-of-type::before {
     content: counter(li);
