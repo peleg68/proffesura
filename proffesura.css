@@ -536,6 +536,7 @@ tt {
 
 code {
     background-color: #f3f4f4;
+    padding: 0.3rem;
 }
 
 .md-fences {
