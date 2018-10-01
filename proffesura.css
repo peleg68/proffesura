@@ -1,36 +1,203 @@
 :root {
     --side-bar-bg-color: #fafafa;
     --control-text-color: #777;
+    --color-primary-light: #B5E3FF;
+    --color-primary-normal: #03A9F4;
+    --color-primary-dark: #0288D1;
+    --color-accent-light: #CFD8DC;
+    --color-accent-normal: #607D8B;
+    --color-accent-dark: #455A64;
+    --color-text-primary: rgb(51, 51, 51);
+    --color-text-secondary: #757575;
+    --color-divider: #BDBDBD;
+    --standard-radius: 1rem;
 }
 
-@include-when-export url(https://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,700,400&subset=latin,latin-ext);
+@include-when-export url(https://fonts.googleapis.com/earlyaccess/opensanshebrew.css);
+@include-when-export url(https://fonts.googleapis.com/css?family=Assistant:200,300,400,600,700,800&amp;subset=hebrew);
 
 @font-face {
-    font-family: 'Open Sans';
-    font-style: normal;
-    font-weight: normal;
-    src: local('Open Sans Regular'),url('./github/400.woff') format('woff')
-}
-
-@font-face {
-    font-family: 'Open Sans';
+    font-family: 'Open Sans Hebrew';
+    src: local('Open Sans Hebrew Light Italic'), local('OpenSansHebrew-LightItalic'),
+        url('./proffesura/OpenSansHebrew-LightItalic.ttf') format('truetype');
+    font-weight: 300;
     font-style: italic;
-    font-weight: normal;
-    src: local('Open Sans Italic'),url('./github/400i.woff') format('woff')
 }
 
 @font-face {
-    font-family: 'Open Sans';
-    font-style: normal;
-    font-weight: bold;
-    src: local('Open Sans Bold'),url('./github/700.woff') format('woff')
-}
-
-@font-face {
-    font-family: 'Open Sans';
+    font-family: 'Open Sans Hebrew Extra';
+    src: local('Open Sans Hebrew Extra Bold Italic'), local('OpenSansHebrewExtraBold-Italic'),
+        url('./proffesura/OpenSansHebrewExtraBold-Italic.ttf') format('truetype');
+    font-weight: 800;
     font-style: italic;
+}
+
+@font-face {
+    font-family: 'Open Sans Hebrew';
+    src: local('Open Sans Hebrew Italic'), local('OpenSansHebrew-Italic'),
+        url('./proffesura/OpenSansHebrew-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Open Sans Hebrew';
+    src: local('Open Sans Hebrew Bold'), local('OpenSansHebrew-Bold'),
+        url('./proffesura/OpenSansHebrew-Bold.ttf') format('truetype');
     font-weight: bold;
-    src: local('Open Sans Bold Italic'),url('./github/700i.woff') format('woff')
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Open Sans Hebrew';
+    src: local('Open Sans Hebrew Light'), local('OpenSansHebrew-Light'),
+        url('./proffesura/OpenSansHebrew-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Open Sans Hebrew Extra';
+    src: local('Open Sans Hebrew Extra Bold'), local('OpenSansHebrew-ExtraBold'),
+        url('./proffesura/OpenSansHebrew-ExtraBold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Open Sans Hebrew';
+    src: local('Open Sans Hebrew Bold Italic'), local('OpenSansHebrew-BoldItalic'),
+        url('./proffesura/OpenSansHebrew-BoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Open Sans Hebrew';
+    src: local('Open Sans Hebrew'), local('OpenSansHebrew-Regular'),
+        url('./proffesura/OpenSansHebrew-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Almoni DL AAA';
+    src: local('Almoni DL AAA Black'), local('AlmoniDLAAA-Black'),
+        url('./proffesura/AlmoniDLAAA-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Almoni DL AAA';
+    src: local('Almoni DL AAA Light'), local('AlmoniDLAAA-Light'),
+        url('./proffesura/AlmoniDLAAA-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Almoni DL AAA';
+    src: local('Almoni DL AAA'), local('AlmoniDLAAA'),
+        url('./proffesura/AlmoniDLAAA.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Almoni Tzar AAA';
+    src: local('Almoni Tzar AAA Light'), local('AlmoniTzarAAA-Light'),
+        url('./proffesura/AlmoniTzarAAA-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Almoni Tzar AAA';
+    src: local('Almoni Tzar AAA Bold'), local('AlmoniTzarAAA-Bold'),
+        url('./proffesura/AlmoniTzarAAA-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Almoni Tzar AAA';
+    src: local('Almoni Tzar AAA'), local('AlmoniTzarAAA'),
+        url('./proffesura/AlmoniTzarAAA.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Almoni Tzar AAA';
+    src: local('Almoni Tzar AAA Thin'), local('AlmoniTzarAAA-Thin'),
+        url('./proffesura/AlmoniTzarAAA-Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Almoni Tzar AAA';
+    src: local('Almoni Tzar AAA ExtraLight'), local('AlmoniTzarAAA-ExtraLight'),
+        url('./proffesura/AlmoniTzarAAA-ExtraLight.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Almoni DL AAA';
+    src: local('Almoni DL AAA Bold'), local('AlmoniDLAAA-Bold'),
+        url('./proffesura/AlmoniDLAAA-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Assistant';
+    src: local('Assistant-Regular'),
+        url('./proffesura/Assistant-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Assistant';
+    src: local('Assistant-Light'),
+        url('./proffesura/Assistant-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Assistant';
+    src: local('Assistant-SemiBold'),
+        url('./proffesura/Assistant-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Assistant';
+    src: local('Assistant Bold'), local('Assistant-Bold'),
+        url('./proffesura/Assistant-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Assistant';
+    src: local('Assistant-ExtraLight'),
+        url('./proffesura/Assistant-ExtraLight.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Assistant';
+    src: local('Assistant-ExtraBold'),
+        url('./proffesura/Assistant-ExtraBold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
 }
 
 html {
@@ -38,7 +205,7 @@ html {
 }
 
 body {
-    font-family: "Open Sans","Clear Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: "Assistant", "Open Sans Hebrew","Clear Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
     color: rgb(51, 51, 51);
     line-height: 1.6;
 }
@@ -49,6 +216,8 @@ body {
   	padding: 20px 30px 40px 30px;
 	padding-top: 20px;
     padding-bottom: 100px;
+    direction: rtl;
+    color: var(--color-text-primary);
 }
 #write > ul:first-child,
 #write > ol:first-child{
@@ -83,7 +252,6 @@ h3:hover a.anchor,
 h4:hover a.anchor,
 h5:hover a.anchor,
 h6:hover a.anchor {
-    /*background: url("../../images/modules/styleguide/para.png") no-repeat 10px center;*/
     text-decoration: none;
 }
 h1 tt,
@@ -112,19 +280,24 @@ h6 code {
 }
 h1 {
     padding-bottom: .3em;
-    font-size: 2.25em;
+    font-size: 3em;
     line-height: 1.2;
     border-bottom: 1px solid #eee;
+    font-family: 'Almoni DL AAA';
+    font-weight: 900;
 }
 h2 {
-   padding-bottom: .3em;
-    font-size: 1.75em;
+    padding-bottom: .3em;
+    font-size: 2em;
     line-height: 1.225;
-    border-bottom: 1px solid #eee;
+    border-bottom: 1px solid var(--color-primary-light);
+    font-family: 'Almoni Tzar AAA', 'Open Sans Hebrew';
+    font-weight: 400;
 }
 h3 {
     font-size: 1.5em;
     line-height: 1.43;
+    font-family: 'Open Sans Hebrew';
 }
 h4 {
     font-size: 1.25em;
@@ -135,6 +308,67 @@ h5 {
 h6 {
    font-size: 1em;
     color: #777;
+}
+#write h1 {
+    background-color: var(--color-primary-light);
+    border-radius: var(--standard-radius) var(--standard-radius) 0 0;
+    font-size: 5.25em;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+#write h2 {
+    font-size: 2.25em;
+    padding: 0rem;
+    padding-right: 0.5rem;
+    margin: 0.1rem;
+    border-bottom: none;
+    border-right: 0.5rem solid var(--color-accent-light);
+}
+#write h1, #write h1 + h2 {
+    border: none;
+    background-color: var(--color-primary-light);
+    margin: 0;
+    padding-top: 0;
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
+#write h1 + h2 {
+    padding-bottom: 0.3rem;
+}
+#write h3 {
+    font-size: 110%;
+    font-size: 1.65em;
+    font-weight: 800;
+    font-size: 1.5em;
+    margin: 0.5rem 0 0.5rem 0;
+}
+ol li p:first-of-type{
+    font-weight: 800;
+    font-size: 1.20em;
+    margin: 0.5rem 0 0 0;
+    font-family: 'Open Sans Hebrew';
+}
+ol li {
+    list-style: none;
+}
+ol>li>p:first-of-type::before {
+    content: counter(li);
+    color: var(--color-primary-normal);
+    display: inline-block; 
+    width: 1em;
+    margin-right: -1em;
+    font-weight: 200;
+}
+ul li p, ul li{
+    font-weight: 400;
+    list-style-type: disc;
+    margin: 0;
+    font-size: 1rem;
+    font-family: 'Assistant';
+}
+li
+#write p, td{
+    font-size: 110%;
 }
 p,
 blockquote,
@@ -199,7 +433,10 @@ li p.first {
 }
 ul,
 ol {
-    padding-left: 30px;
+    padding-right: 30px;
+}
+li {
+    counter-increment: li
 }
 ul:first-child,
 ol:first-child {
@@ -210,39 +447,62 @@ ol:last-child {
     margin-bottom: 0;
 }
 blockquote {
-    border-left: 4px solid #dfe2e5;
+    border-right: 4px solid #dfe2e5;
     padding: 0 15px;
     color: #777777;
 }
 blockquote blockquote {
-    padding-right: 0;
+    padding-left: 0;
 }
 table {
     padding: 0;
     word-break: initial;
+    border-collapse: separate;
+    border-radius: var(--standard-radius);
+    border: 1px none var(--color-divider);
 }
 table tr {
-    border-top: 1px solid #dfe2e5;
+    border-top: 1px solid var(--color-divider);
     margin: 0;
     padding: 0;
 }
-table tr:nth-child(2n),
-thead {
+#write table tr:nth-child(2n+1) {
     background-color: #f8f8f8;
 }
+#write thead td, 
+#write thead th {
+    background-color: var(--color-primary-light);
+}
 table tr th {
-    font-weight: bold;
-    border: 1px solid #dfe2e5;
-    border-bottom: 0;
-    text-align: left;
+    font-weight: 800;
+    font-family: 'Assistant';
+    font-size: 1.2rem;
+    border: 1px solid var(--color-divider);
+    text-align: right;
     margin: 0;
-    padding: 6px 13px;
+    padding: 0.5rem 1rem;
 }
 table tr td {
-    border: 1px solid #dfe2e5;
-    text-align: left;
+    border: 1px solid var(--color-divider);
+    text-align: right;
     margin: 0;
-    padding: 6px 13px;
+    padding: 0.5rem 1rem;
+}
+#write thead>tr>th:first-child, 
+#write thead>tr>td:first-child {
+    border-top-right-radius: var(--standard-radius);
+}
+#write thead>tr>th:last-child, 
+#write thead>tr>td:last-child {
+    border-top-left-radius: var(--standard-radius);
+}
+#write tbody>tr:last-child>th:first-child, 
+#write tbody>tr:last-child>td:first-child {
+    border-bottom-right-radius: var(--standard-radius);
+}
+#write tbody>tr:last-child>th:last-child, 
+#write tbody>tr:last-child>td:last-child {
+    border-bottom-left-radius: var(--standard-radius);
 }
 table tr th:first-child,
 table tr td:first-child {
@@ -254,7 +514,7 @@ table tr td:last-child {
 }
 
 .CodeMirror-lines {
-    padding-left: 4px;
+    padding-right: 4px;
 }
 
 .code-tooltip {
@@ -265,16 +525,18 @@ table tr td:last-child {
 .md-fences,
 code,
 tt {
-    border: 1px solid #e7eaed;
+    border: 0 solid #e7eaed;
     background-color: #f8f8f8;
-    border-radius: 3px;
+    border-radius: 0;
     padding: 0;
     padding: 2px 4px 0px 4px;
     font-size: 0.9em;
+    direction: ltr
 }
 
 code {
     background-color: #f3f4f4;
+    padding: 0.3rem;
 }
 
 .md-fences {
@@ -285,9 +547,10 @@ code {
     padding-bottom: 6px;
 }
 
-
 .md-task-list-item > input {
-  margin-left: -1.3em;
+  margin-right: -1.3em;
+  position: absolute;
+  right: 0;
 }
 
 @media screen and (min-width: 914px) {
@@ -332,19 +595,19 @@ code {
 }
 
 #write>h3.md-focus:before{
-	left: -1.5625rem;
+	right: -1.5625rem;
 	top: .375rem;
 }
 #write>h4.md-focus:before{
-	left: -1.5625rem;
+	right: -1.5625rem;
 	top: .285714286rem;
 }
 #write>h5.md-focus:before{
-	left: -1.5625rem;
+	right: -1.5625rem;
 	top: .285714286rem;
 }
 #write>h6.md-focus:before{
-	left: -1.5625rem;
+	right: -1.5625rem;
 	top: .285714286rem;
 }
 .md-image>.md-meta {
@@ -383,7 +646,7 @@ code {
 
 /** focus mode */
 .on-focus-mode blockquote {
-    border-left-color: rgba(85, 85, 85, 0.12);
+    border-right-color: rgba(85, 85, 85, 0.12);
 }
 
 header, .context-menu, .megamenu-content, footer{
