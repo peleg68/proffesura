@@ -319,18 +319,18 @@ h6 {
 #write h2 {
     font-size: 2.25em;
     padding: 0rem;
-    padding-right: 0.5rem;
+    padding-left: 0.5rem;
     margin: 0.1rem;
     border-bottom: none;
-    border-right: 0.5rem solid var(--color-accent-light);
+    border-left: 0.5rem solid var(--color-accent-light);
 }
 #write h1, #write h1 + h2 {
     border: none;
     background-color: var(--color-primary-light);
     margin: 0;
     padding-top: 0;
-    padding-right: 1rem;
     padding-left: 1rem;
+    padding-right: 1rem;
 }
 #write h1 + h2 {
     padding-bottom: 0.3rem;
@@ -356,7 +356,7 @@ ol>li>p:first-of-type::before {
     color: var(--color-primary-normal);
     display: inline-block; 
     width: 1em;
-    margin-right: -1em;
+    margin-left: -1em;
     font-weight: 200;
 }
 ul li p, ul li{
@@ -433,7 +433,7 @@ li p.first {
 }
 ul,
 ol {
-    padding-right: 30px;
+    padding-left: 30px;
 }
 li {
     counter-increment: li
@@ -447,12 +447,12 @@ ol:last-child {
     margin-bottom: 0;
 }
 blockquote {
-    border-right: 4px solid #dfe2e5;
+    border-left: 4px solid #dfe2e5;
     padding: 0 15px;
     color: #777777;
 }
 blockquote blockquote {
-    padding-left: 0;
+    padding-right: 0;
 }
 table {
     padding: 0;
@@ -478,31 +478,31 @@ table tr th {
     font-family: 'Assistant';
     font-size: 1.2rem;
     border: 1px solid var(--color-divider);
-    text-align: right;
+    text-align: left;
     margin: 0;
     padding: 0.5rem 1rem;
 }
 table tr td {
     border: 1px solid var(--color-divider);
-    text-align: right;
+    text-align: left;
     margin: 0;
     padding: 0.5rem 1rem;
 }
 #write thead>tr>th:first-child, 
 #write thead>tr>td:first-child {
-    border-top-right-radius: var(--standard-radius);
+    border-top-left-radius: var(--standard-radius);
 }
 #write thead>tr>th:last-child, 
 #write thead>tr>td:last-child {
-    border-top-left-radius: var(--standard-radius);
+    border-top-right-radius: var(--standard-radius);
 }
 #write tbody>tr:last-child>th:first-child, 
 #write tbody>tr:last-child>td:first-child {
-    border-bottom-right-radius: var(--standard-radius);
+    border-bottom-left-radius: var(--standard-radius);
 }
 #write tbody>tr:last-child>th:last-child, 
 #write tbody>tr:last-child>td:last-child {
-    border-bottom-left-radius: var(--standard-radius);
+    border-bottom-right-radius: var(--standard-radius);
 }
 table tr th:first-child,
 table tr td:first-child {
@@ -514,7 +514,7 @@ table tr td:last-child {
 }
 
 .CodeMirror-lines {
-    padding-right: 4px;
+    padding-left: 4px;
 }
 
 .code-tooltip {
@@ -548,9 +548,9 @@ code {
 }
 
 .md-task-list-item > input {
-  margin-right: -1.3em;
+  margin-left: -1.3em;
   position: absolute;
-  right: 0;
+  left: 0;
 }
 
 @media screen and (min-width: 914px) {
