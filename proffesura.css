@@ -14,7 +14,7 @@
 }
 
 @include-when-export url(https://fonts.googleapis.com/earlyaccess/opensanshebrew.css);
-@include-when-export url(https://fonts.googleapis.com/css?family=Assistant);
+@include-when-export url(https://fonts.googleapis.com/css?family=Assistant:200,300,400,600,700,800&amp;subset=hebrew);
 
 @font-face {
     font-family: 'Open Sans Hebrew';
