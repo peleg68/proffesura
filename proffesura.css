@@ -525,7 +525,7 @@ table tr td:last-child {
 .md-fences,
 code,
 tt {
-    border: 1px solid #e7eaed;
+    border: 0 solid #e7eaed;
     background-color: #f8f8f8;
     border-radius: 0;
     padding: 0;
