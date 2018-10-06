@@ -350,14 +350,19 @@ ol li p:first-of-type{
 }
 ol li {
     list-style: none;
+    counter-increment: main-counter;
+}
+ol {
+    counter-reset: main-counter;
 }
 ol>li>p:first-of-type::before {
-    content: counter(li);
+    content: counter(main-counter);
     color: var(--color-primary-normal);
     display: inline-block; 
-    width: 1em;
+    margin-right: 0.5rem;
     margin-left: -1em;
     font-weight: 200;
+    justify-content: right;
 }
 ul li p, ul li{
     font-weight: 400;
@@ -365,6 +370,9 @@ ul li p, ul li{
     margin: 0;
     font-size: 1rem;
     font-family: 'Assistant';
+}
+ul li{
+    counter-increment: sub-counter;
 }
 li
 #write p, td{
